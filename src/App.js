@@ -96,19 +96,6 @@ function App(){
     setInstall(false);
   }
 
-  useEffect( () => {
-    const handler = (e) => {
-      e.preventDefault();
-      setInstall(e.prompt);
-    };
-
-    window.addEventListener('beforeinstallprompt', handler);
-
-    return () => {
-      window.removeEventListener('beforeinstallprompt', handler);
-    };
-  }, []);
-
   return (
     // Nous avions passé des données au context dans App.js:
     <BookmarksContext.Provider value={{ bookmarks, setBookmarks }}>
