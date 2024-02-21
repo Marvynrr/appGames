@@ -49,7 +49,7 @@ function App(){
       path: "/",
       element: <Home />,
       errorElement: <ErrorMessage />
-    }, { basename: "/appGames"},
+    }, 
     {
       path: "/details/:slug",
       element: <Details />,
@@ -63,7 +63,7 @@ function App(){
       path: "/shop",
       element: <MyShop />,
     },
-  ], { basename: "/" })
+  ], { basename: "/appGames" })
 
   const deferredPrompt = useRef(null); // Utiliser useRef pour ocnserver defferedPrompt à travers les re-rendus
 
