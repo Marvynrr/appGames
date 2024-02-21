@@ -48,8 +48,8 @@ function App(){
     {
       path: "/",
       element: <Home />,
-      errorElement: <ErrorMessage />,
-    },
+      errorElement: <ErrorMessage />
+    }, { basename: "/appGames"},
     {
       path: "/details/:slug",
       element: <Details />,
