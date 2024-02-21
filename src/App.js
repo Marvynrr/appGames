@@ -76,7 +76,7 @@ function App(){
     };
 
     // On place l'eventListener au démarrage
-    window.addEeventListener('beforeinstallprompt', handler);
+    window.addEventListener('beforeinstallprompt', handler);
     return () => {
       // On retire l'eventlistener à la fermeture
       window.removeEventListener('beforeinstallprompt', handler);
