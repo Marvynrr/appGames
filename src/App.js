@@ -1,6 +1,6 @@
 import './App.css';
 import Home from './pages/Home';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ErrorMessage from './pages/ErrorMessage';
 import Details from './pages/Details';
